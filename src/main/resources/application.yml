@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      coffee:
+        database: coffee
+        uri: mongodb://localhost:27017
+      burger:
+        database: burger
+        uri: mongodb://localhost:27017
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoReactiveAutoConfiguration,org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
